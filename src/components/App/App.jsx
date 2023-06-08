@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Container, Alert } from './App.styled';
+import { Container } from './App.styled';
 import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
 import { Statistics } from '../Statistics/Statistics';
 import { Section } from '../Section/Section';
+import { Notification } from '../Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -52,7 +53,7 @@ export class App extends Component {
               positivePercentage={positiveFeedbackPercentage}
             />
           ) : (
-            <Alert>"There is no feedback"</Alert>
+            <Notification alert="There is no feedback" />
           )}
         </Section>
       </Container>

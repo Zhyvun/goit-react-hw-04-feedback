@@ -5,7 +5,3 @@ export const Container = styled.div`
   font-size: 40px;
   color: #010101;
 `;
-
-export const Alert = styled.p`
-  text-align: center;
-`;
